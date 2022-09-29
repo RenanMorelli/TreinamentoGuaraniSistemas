@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="main-container">
+            <h1>Cadastre o Produto</h1>
+        <form id="register-form" method="POST" action="./teste.php">
+            <div class="half-box">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome do produto" data-min-length="1">
+            </div>
+
+            <div class="full-box" style="margin-right: 0px;">
+                <label for="preco">Preço</label>
+                <input type="number" min="0" name="preco" id="preco" placeholder="preço do produto"  required valormin>
+            </div>
+
+            <div class="half-box">
+                <label for="cod">Código</label>
+                <input type="text" name="cod" id="cod" placeholder="Código" data-min-length="1">
+            </div>
+
+            <div class="half-box" style="margin-right: 0px;">
+                <label for="embalagem">Embalagem</label>
+                <input type="text" name="embalagem" id="embalagem" placeholder="Embalagem" obrigatorioembalagem>
+            </div>
+
+            <div class="half-box">
+                <label for="multiplo">Múltiplo</label>
+                <input type="number"  name="multiplo" id="multiplo" placeholder="Múltiplo" obrigatoriomultiplo>
+            </div>
+
+            <div class="half-box" style="margin-right: 0px;">
+                <label for="Ipi">Ipi</label>
+                <input type="number" name="Ipi" id="Ipi" placeholder="Ipi" min="0" max="100"  valorminemax>
+            </div>
+
+            <div class="full-box">
+                <input type="submit" value="Cadastrar" id="btn-submit">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="./index.js"></script>
+</body>
+</html>

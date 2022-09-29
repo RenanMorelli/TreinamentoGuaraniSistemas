@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+    *, 
+    button,
+    input {
+        font-family: Helvetica, sans-serif;
+    }
+
+    body{
+      background-color: #284B2B;
+
+    }
+
+    #paginate {
+        width: 100%;
+
+        margin: 32px auto;
+    }
+
+    #paginate .item {
+        font-size: 1rem;
+    }
+
+    #paginate .item:hover {
+        background-color:#284b2b6c;
+    }
+
+    #paginate .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #284B2B;
+        margin-top: 8px;
+    }
+
+    #paginate .controls div {
+        cursor: pointer;
+        border: 1px solid #eee; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 14;
+    }
+
+    #paginate .controls div:not(.numbers),
+    #paginate .controls div.numbers div{
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    #paginate .controls div.numbers div.active {
+        color: rgb(255, 255, 255);
+        background-color: #284B2B;
+    }
+    #paginate .controls div:not(.numbers):hover,
+    #paginate .controls div.numbers div:hover{
+        background-color: #284b2b76;
+
+    }
+
+    #main-container{
+      width: 95%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      padding: 25px;
+      padding-bottom: 15px;
+      margin-top: 40px;
+    }
+
+    #main-container h1 ,h2{
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.6rem;
+      color: #284B2B;
+    }
+
+    .linha{
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: 2px solid #284B2B;
+        font-size: 1rem;
+        font-weight: bold;
+
+    }
+
+    .coluna-nomes {
+        width: 16%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color:#000;
+        font-weight:normal;
+
+    }
+
+    .coluna-20 {
+        width: 24%;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: normal;
+    }
+
+    .coluna-10 {
+        width: 10%;
+        color: #000000;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: normal;
+    }
+
+    @media screen and (max-width: 780px) {
+    .linha{
+        font-size: .5rem;
+    } 
+
+    #paginate .item {
+        font-size: .5rem;
+    }
+
+    .icone{
+        width: 5px; 
+        height: 5px;
+    }
+
+    }
+
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #284B2B;
+        border: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        padding: 10px;
+        width: 170px;
+        transition: all 0.5s;
+        cursor: pointer;
+
+      }
+      
+      .button a {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: #fff;
+      }
+      
+      .button a:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover a {
+        padding-right: 25px;
+      }
+      
+      .button:hover a:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .teste{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+      }
+
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+ 
+
+
+  
+
+  
+
+
+
+   
